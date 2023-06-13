@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Focus Timer 2.0</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <section class="stopwatch">
+    <div class="timer">
+      <span class="minutes">25</span>
+      <span>:</span>
+      <span class="seconds">00</span>
+    </div>
+    <div class="controls">
+      <button class="play">
+        <img src="./assets/play.svg" alt="botão com sinal de play">
+      </button>
+      <button class="stop">
+        <img src="./assets/stop.svg" alt="botão com sinal de stop">
+      </button>
+      <button class="increase">
+        <img src="./assets/increase.svg" alt="botão com sinal de mais">
+      </button>
+      <button class="decrease">
+        <img src="./assets/decrease.svg" alt="botão com sinal de menos">
+      </button>
+    </div>
+  </section>
+  <section class="sounds">
+    <div class="cards">
+      <button class="forest">
+        <img src="./assets/forest.svg" alt="um botão com icone de floresta">
+        <audio src="./sounds/forest.wav"></audio>
+      </button>
+      <button class="rain">
+        <img src="./assets/rain.svg" alt="um botão com icone de chuva">
+        <audio src="./sounds/rain.wav"></audio>
+      </button>
+      <button class="coffee-shop">
+        <img src="./assets/coffee-shop.svg" alt="um botão com icone de cafeteria">
+        <audio src="./sounds/coffee-shop.wav"></audio>
+      </button>
+      <button class="fireplace">
+        <img src="./assets/fireplace.svg" alt="um botão com icone de lareira">
+        <audio src="./sounds/fireplace.wav"></audio>
+      </button>
+    </div>
+  </section>
+
+  <script src="./js/index.js" type="module"></script>
+</body>
+</html>

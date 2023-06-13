@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+
+  --bg-page: #FFFFFF;
+
+  --ff-text: 'Roboto', sans-serif;
+  --fc-text: #323238;
+
+  --bg-cards: #E1E1E6;
+  --bg-cards-selected: #02799D;
+
+  --fc-icons: #323238;
+  --fc-icons-selected: #FFFFFF;
+
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  gap: 19.2rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.timer {
+  display: flex;
+
+  font-family: var(--ff-text);
+  font-weight: 500;
+  font-size: 12.6rem;
+  line-height: 14.8rem;
+
+  margin-bottom: 4.8rem;
+}
+
+.controls {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.play,
+.stop, 
+.increase, 
+.decrease {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: 13.8rem 13.8rem;
+  grid-template-rows: 15.2rem 15.2rem; 
+  gap: 3.2rem;
+}
+
+.forest,
+.rain,
+.coffee-shop,
+.fireplace {
+  background: var(--bg-cards);
+  border: none;
+  border-radius: 2.4rem;
+  cursor: pointer;
+}
+
+.selected-card {
+  background: var(--bg-cards-selected);
+}
+
+.hide {
+  display: none;
+}
